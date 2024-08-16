@@ -1,0 +1,76 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Custom Properties */
+:root {
+  --primary-color: teal;
+  --primary-tints: teal;
+  --primary-shades: teal;
+
+  --extra-big-font: 5.2rem;
+  --big-font: 4.4rem;
+  --medium-font: 3.6rem;
+  --small-font: 2rem;
+  --extra-small-font: 1.6rem;
+  --extreme-small-font: 1.4rem;
+
+  --big-section-space: 9.6rem;
+  --section-space: 8rem;
+}
+
+/* Inheritance */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Times New Roman", serif;
+  font-weight: 400;
+  color: #444;
+  line-height: 1;
+}
+
+/* Grids */
+.grid {
+  display: grid;
+}
+
+.grid--2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid--3-columns {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-v {
+  align-items: center;
+}
+
+/* Utilities */
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  letter-spacing: -0.75px;
+  line-height: 1.02;
+}
+
+p {
+  line-height: 1.8;
+}
