@@ -9,9 +9,9 @@
 
 /* Custom Properties */
 :root {
-  --primary-color: teal;
-  --primary-tints: teal;
-  --primary-shades: teal;
+  --primary-color: #12b886;
+  --primary-tints: #d0f1e7;
+  --primary-shades: #02120d;
 
   --extra-big-font: 5.2rem;
   --big-font: 4.4rem;
@@ -22,6 +22,8 @@
 
   --big-section-space: 9.6rem;
   --section-space: 8rem;
+
+  --flex-small-gap: 0.6rem;
 }
 
 /* Inheritance */
@@ -53,7 +55,17 @@ body {
   align-items: center;
 }
 
+.flex {
+  display: flex;
+  gap: var(--flex-small-gap);
+}
+
 /* Utilities */
+::placeholder {
+  background-color: #e7f8f3;
+  color: #555;
+}
+
 a:link,
 a:visited {
   text-decoration: none;
@@ -71,6 +83,48 @@ h3 {
   line-height: 1.02;
 }
 
+.heading-primary {
+  font-size: var(--extra-big-font);
+}
+
+.heading-secondary {
+  font-size: var(--big-font);
+}
+
 p {
   line-height: 1.8;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  font-weight: 700;
+  font-size: var(--small-font);
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-btn:link,
+.primary-btn:visited {
+  background-color: #12b886;
+  color: #02120d;
+}
+
+.primary-btn:hover,
+.primary-btn:active {
+  color: #12b886;
+  background-color: #02120d;
+}
+
+.secondary-btn:link,
+.secondary-btn:visited {
+  background-color: #fff;
+  color: #02120d;
+}
+
+.secondary-btn:hover,
+.secondary-btn:active {
+  color: #fff;
+  background-color: #02120d;
 }
