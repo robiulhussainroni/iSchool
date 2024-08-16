@@ -1,0 +1,20 @@
+/* Small Laptops : 1280px */
+
+@media (max-width: 80em) {
+  .hero {
+    max-width: 110rem;
+  }
+
+  .heading-primary {
+    font-size: var(--big-font);
+  }
+
+  .heading-secondary {
+    font-size: var(--medium-font);
+  }
+
+  .hero-description,
+  .form-description {
+    font-size: calc(var(--small-font) - 0.2rem);
+  }
+}
