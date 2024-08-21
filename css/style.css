@@ -193,7 +193,7 @@ input {
 FEATURED IN SECTION
 **************/
 .section-featured-in {
-  padding: var(--section-space);
+  padding: var(--section-space) 3.2rem;
   padding-bottom: 3.2rem;
 }
 
@@ -219,9 +219,10 @@ FEATURED IN SECTION
 SECTION WHY
 **************/
 .section-why {
-  padding: var(--big-section-space);
+  padding: var(--big-section-space) 3.2rem;
   background-color: var(--primary-tints);
-  clip-path: polygon(0 60%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+  color: var(--primary-shades);
 }
 
 .section-why .heading-secondary {
@@ -229,9 +230,45 @@ SECTION WHY
   width: 35rem;
   margin-inline: auto;
   margin-top: 5rem;
-  margin-bottom: 6.4rem;
+  margin-bottom: 9.6rem;
   padding: 1.2rem;
   text-transform: uppercase;
   background-color: var(--primary-shades);
   color: var(--primary-color);
+}
+
+.why {
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.why-img {
+  width: 70%;
+  border-radius: 9px;
+  justify-self: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.why-img:hover {
+  transform: scale(1.1);
+}
+
+.text-why {
+  font-size: var(--small-font);
+  line-height: 1.8;
+}
+
+.school-name {
+  border-bottom: 3px solid var(--primary-color);
+}
+
+/************
+ABOUT US SECTION
+**************/
+.section-about {
+  padding: var(--big-section-space) 3.2rem;
+}
+
+.section-about .heading-secondary {
+  color: var(--primary-shades);
 }
