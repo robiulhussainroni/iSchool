@@ -43,6 +43,10 @@ I'm not sure how to design this section. But I think it could be serve as featur
 
 Well, how about showing the specialitis of the school with image and the layout in Z pattern.
 
+### About Us ?
+
+In about us section, I want to tell about iSchool. Where it is available, Who is the directior of iSchool.. etc.
+
 <!-- Design Decisions -->
 
 **Color** : I'm choosing Teal as primary color. Teal represents creativity, stability and it's commonly used in education inductry. Open Color is here for me to find a great version of Teal. I also try to use Tints and Shades of Teal. As per for Secondary color, I haven't selected yet!

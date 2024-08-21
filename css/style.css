@@ -258,17 +258,148 @@ SECTION WHY
   line-height: 1.8;
 }
 
-.school-name {
-  border-bottom: 3px solid var(--primary-color);
-}
-
 /************
 ABOUT US SECTION
 **************/
 .section-about {
-  padding: var(--big-section-space) 3.2rem;
+  padding: var(--big-section-space) 3.2rem 12rem;
 }
 
 .section-about .heading-secondary {
   color: var(--primary-shades);
+  margin-bottom: 8rem;
+}
+
+.about-text {
+  color: var(--primary-shades);
+  font-size: var(--small-font);
+  line-height: 1.8;
+  margin-bottom: 6.4rem;
+}
+
+.section-about .heading-tertiary {
+  color: var(--primary-shades);
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.directors-container {
+  margin-bottom: 9.6rem;
+}
+
+.directors-container.grid {
+  gap: 6.4rem;
+}
+
+.directors-profile {
+  padding: 1.6rem;
+  background-color: var(--primary-tints);
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.director-img {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+}
+
+.director-name,
+.director-role {
+  font-size: var(--extra-small-font);
+}
+
+.available-cards .available-city:nth-child(odd) {
+  background-color: var(--primary-shades);
+  color: #fff;
+}
+
+.available-cards .available-city:nth-child(even) {
+  background-color: var(--primary-tints);
+  color: var(--primary-shades);
+}
+
+.available-city {
+  font-size: var(--small-font);
+  padding: 1.6rem;
+}
+
+/************
+FOOTER SECTION
+**************/
+
+.footer {
+  padding: var(--section-space) 3.2rem 1rem;
+  border-top: 1px solid #aaa;
+}
+
+.footer.grid {
+  gap: 9.6rem;
+}
+
+.footer-logo {
+  width: 9.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.copyright,
+.website-info {
+  font-size: var(--extreme-small-font);
+}
+
+.website-info {
+  color: var(--primary-shades);
+  margin-top: 1.2rem;
+}
+
+.col-heading {
+  font-size: var(--small-font);
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+.contact-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.contact-ul li {
+  font-size: var(--extra-small-font);
+}
+
+.contact-ul a:link,
+.contact-ul a:visited {
+  color: #444;
+}
+
+.contact-ul a:hover,
+.contact-ul a:active {
+  text-decoration: underline;
+}
+
+.social-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.social-ul li {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  font-size: var(--extra-small-font);
+}
+
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.social-ul li a:link,
+.social-ul li a:visited {
+  color: #444;
 }

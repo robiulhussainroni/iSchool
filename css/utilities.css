@@ -91,6 +91,10 @@ h3 {
   font-size: var(--big-font);
 }
 
+.heading-tertiary {
+  font-size: var(--medium-font);
+}
+
 p {
   line-height: 1.8;
 }
@@ -127,4 +131,8 @@ p {
 .secondary-btn:active {
   color: #fff;
   background-color: #02120d;
+}
+
+.school-name {
+  border-bottom: 3px solid var(--primary-color);
 }
