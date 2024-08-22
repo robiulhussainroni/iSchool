@@ -29,6 +29,9 @@
 /* Inheritance */
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scrollbar-color: var(--primary-color) var(--primary-shades);
 }
 
 body {
@@ -36,6 +39,10 @@ body {
   font-weight: 400;
   color: #444;
   line-height: 1;
+}
+
+.mobile-form {
+  display: none;
 }
 
 /* Grids */

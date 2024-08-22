@@ -20,10 +20,9 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav--ul">
-          <li><a href="#" class="main-nav--link">Section 1</a></li>
-          <li><a href="#" class="main-nav--link">Section 2</a></li>
-          <li><a href="#" class="main-nav--link">Section 3</a></li>
-          <li><a href="#" class="main-nav--link">Section 4</a></li>
+          <li><a href="#why" class="main-nav--link">Our Work</a></li>
+          <li><a href="#about" class="main-nav--link">About Us</a></li>
+          <li><a href="#" class="main-nav--link primary-btn btn">Admit Now</a></li>
         </ul>
       </nav>
     </header>
@@ -102,7 +101,7 @@
         <img src="./assets/logos/time-magazine-logo.png" alt="Time Magazine Logo" class="logo" title="Time Magazine Logo">   
       </div>
     </section>
-    <section class="section-why">
+    <section class="section-why" id="why">
       <h2 class="heading-secondary">Why Choose Us?</h2>
       <div class="why grid grid--2-columns grid-v">
         
@@ -112,12 +111,12 @@
           <span class="school-name"> iSchool</span> has achieved the highest success rate among all schools in the region. Our students consistently perform well, guided by dedicated faculty and innovative teaching methods. This accomplishment reflects our commitment to supporting every student's growth and helping them reach their full potential.
         </div>
 
-        <div class="text-why">
+        <div class="text-why row-4">
           <span class="school-name">
           iSchool </span> offers a range of additional courses designed to enrich our students' educational experience. From advanced STEM programs to creative arts and language courses, we provide opportunities for students to explore their interests and develop new skills. These extra courses are tailored to support personal growth and prepare students for future challenges in a well-rounded manner.
         </div>
 
-        <img src="./assets/img/extra-course.png" alt="Image shows iSchool provide extra courses" class="why-img">
+        <img src="./assets/img/extra-course.png" alt="Image shows iSchool provide extra courses" class="why-img row-3">
 
         <img src="./assets/img/environment.png" alt="Image shows great environment of iSchool" class="why-img">
 
@@ -127,12 +126,12 @@
         </div>
       </div>
     </section>
-    <section class="section-about">
+    <section class="section-about" id="about">
       <h2 class="heading-secondary">About Us..</h2>
       <p class="about-text">Founded in 2004 by two friends with a shared vision for innovative education, iSchool has grown into a leading institution dedicated to student success. Our founders' commitment to excellence and personalized learning has shaped iSchool into a nurturing environment where curiosity and growth are fostered. We continue to build on this foundation, providing a supportive and dynamic atmosphere that prepares students.</p>
       <h3 class="heading-tertiary"><span class="school-name">iSchool</span> Directors</h3>
       <div class="directors-container grid grid--3-columns">
-      <figure class="directors-profile">
+      <figure class="directors-profile founder">
         <img src="./assets/directors/founder.jpg" alt="Founder of iSchool" class="director-img">
         <figcaption class="director-name">
           <span class="director-name">Jhon Doe ||</span>
@@ -166,6 +165,46 @@
           Liverpool
           L1 8FY</p>
     </div>
+    </section>
+
+    <section class="section-form mobile-form">
+      <h2 class="heading-secondary">
+        A Free Consultation with Our Mentor
+      </h2>
+      <p class="form-description">
+        Interested in learning more about how we can support your
+        educational journey? Fill out the form below to book a free
+        one-on-one consultation with one of our experienced mentors.
+      </p>
+      <form action="#" class="hero-form">
+        <div class="flex">
+          <div>
+            <label for="name">Your Name &colon;</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Jhon Doe"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Your Email &colon;</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="me@example.com"
+              required
+            />
+          </div>
+        </div>
+        <input
+          type="submit"
+          value="Request a Free Mentoring Session"
+          class="form-btn"
+        />
+      </form>
     </section>
     </main>
     <footer class="footer grid grid--3-columns grid-v">
