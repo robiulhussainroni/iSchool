@@ -13,8 +13,244 @@
     font-size: var(--medium-font);
   }
 
+  .heading-tertiary {
+    font-size: calc(var(--small-font) + 0.4rem);
+  }
+
   .hero-description,
   .form-description {
     font-size: calc(var(--small-font) - 0.2rem);
+  }
+
+  label,
+  input,
+  .form-btn,
+  .featured-heading {
+    font-size: var(--extra-small-font);
+  }
+
+  .section-featured-in .logo {
+    height: 8rem;
+  }
+
+  .why {
+    column-gap: 6.4rem;
+  }
+
+  .why-img {
+    width: 70%;
+  }
+
+  .text-why,
+  .about-text,
+  .col-heading,
+  .main-nav--link:link,
+  .main-nav--link:visited {
+    font-size: var(--small-font);
+  }
+
+  .copyright,
+  .website-info,
+  .contact-ul li,
+  .social-ul li {
+    font-size: var(--extra-small-font);
+  }
+
+  .icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+
+/* LandScape Tablets : 992px */
+
+@media (max-width: 62em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .hero {
+    gap: 6.4rem;
+  }
+
+  .section-form {
+    width: 40%;
+  }
+
+  .copyright,
+  .website-info,
+  .contact-ul li,
+  .social-ul li {
+    font-size: var(--extreme-small-font);
+  }
+
+  .heading-primary {
+    font-size: var(--medium-font);
+  }
+
+  .heading-secondary {
+    font-size: calc(var(--small-font) + 0.4rem);
+  }
+
+  .heading-tertiary {
+    font-size: var(--small-font);
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  .hero-description,
+  .form-description,
+  .text-why,
+  .about-text,
+  .available-city,
+  .btn:link,
+  .btn:visited {
+    font-size: var(--extra-small-font);
+  }
+
+  .btn:link,
+  .btn:visited,
+  input {
+    padding: 1.2rem 2.4rem;
+  }
+
+  .section-featured-in .logo {
+    height: 6.4rem;
+  }
+
+  .section-why .heading-secondary {
+    width: 35%;
+  }
+
+  .directors-container.grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .founder {
+    grid-column: 1 / -1;
+  }
+}
+
+/*  Tablets : 784px */
+@media (max-width: 49em) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading-secondary {
+    font-size: calc(var(--small-font) + 0.8rem);
+  }
+
+  .heading-tertiary {
+    font-size: calc(var(--small-font) + 0.4rem);
+  }
+
+  .section-hero {
+    padding: 6rem 3.2rem 8rem;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .section-form {
+    display: none;
+  }
+
+  .mobile-form {
+    display: block;
+    position: sticky;
+    width: 70%;
+    margin: 6rem auto;
+  }
+
+  .section-featured-in {
+    padding: 6rem 3.2rem;
+  }
+
+  .section-featured-in .logo {
+    height: 4.8rem;
+  }
+
+  .section-why {
+    padding: 6rem 3.2rem;
+    clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .section-why .heading-secondary {
+    margin-bottom: 6rem;
+    width: 50%;
+  }
+
+  .why {
+    grid-template-columns: 1fr;
+  }
+
+  .why-img {
+    width: 65%;
+    transform: translateY(5%);
+  }
+
+  .row-3 {
+    grid-row: 3;
+  }
+
+  .row-4 {
+    grid-row: 4;
+  }
+
+  .directors-container.grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .col-1 {
+    grid-row: 2;
+    grid-column: 1 / -1;
+  }
+
+  .hero-description,
+  .form-description,
+  .text-why,
+  .about-text,
+  .available-city,
+  .btn:link,
+  .btn:visited {
+    font-size: var(--small-font);
+  }
+}
+
+/*  Mobile : 544px */
+@media (max-width: 34em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .header {
+    flex-direction: column;
+    padding-inline: 1.2rem;
+  }
+
+  .main-nav-ul {
+    justify-content: space-between;
+  }
+
+  .section-why .heading-secondary {
+    width: 70%;
+  }
+
+  .why-img {
+    width: 80%;
   }
 }

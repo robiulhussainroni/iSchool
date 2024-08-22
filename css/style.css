@@ -21,6 +21,7 @@ HEADER
 }
 
 .main-nav {
+  font-family: sans-serif;
   position: relative;
   color: #02120d;
   animation: header 0.4s ease-in-out forwards;
@@ -54,6 +55,21 @@ HEADER
 .main-nav--link:active {
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.main-nav--link.primary-btn:link,
+.main-nav--link.primary-btn:visited {
+  background-color: #12b886;
+  color: #02120d;
+  font-weight: 700;
+  padding: 1.6rem 3.2rem;
+}
+
+.main-nav--link.primary-btn:hover,
+.main-nav--link.primary-btn:active {
+  color: #12b886;
+  background-color: #02120d;
+  text-decoration: none;
 }
 
 /************
@@ -164,10 +180,18 @@ FORM SECTION
   gap: 1.6rem;
 }
 
+.form-description {
+  line-height: 1.6;
+}
+
+label,
+input {
+  font-size: var(--small-font);
+}
+
 label {
   display: block;
-  margin-bottom: 0.6rem;
-  font-size: var(--extra-small-font);
+  margin-bottom: 1.2rem;
 }
 
 input {
@@ -180,7 +204,7 @@ input {
 .form-btn {
   cursor: pointer;
   font-weight: 700;
-  font-size: var(--extra-small-font);
+  font-size: var(--small-font);
   transition: all 0.3s ease-in-out;
 }
 
@@ -198,7 +222,7 @@ FEATURED IN SECTION
 }
 
 .featured-heading {
-  font-size: var(--extra-small-font);
+  font-size: var(--small-font);
   text-align: center;
   margin-bottom: 1.6rem;
 }
@@ -210,7 +234,7 @@ FEATURED IN SECTION
 }
 
 .section-featured-in .logo {
-  height: 8rem;
+  height: 9.6rem;
   filter: brightness(0);
   opacity: 50%;
 }
@@ -227,7 +251,7 @@ SECTION WHY
 
 .section-why .heading-secondary {
   text-align: center;
-  width: 35rem;
+  width: 50rem;
   margin-inline: auto;
   margin-top: 5rem;
   margin-bottom: 9.6rem;
@@ -238,12 +262,12 @@ SECTION WHY
 }
 
 .why {
-  column-gap: 6.4rem;
+  column-gap: 9.6rem;
   row-gap: 9.6rem;
 }
 
 .why-img {
-  width: 70%;
+  width: 75%;
   border-radius: 9px;
   justify-self: center;
   transition: all 0.3s ease-in-out;
@@ -254,7 +278,7 @@ SECTION WHY
 }
 
 .text-why {
-  font-size: var(--small-font);
+  font-size: calc(var(--small-font) + 0.4rem);
   line-height: 1.8;
 }
 
@@ -272,7 +296,7 @@ ABOUT US SECTION
 
 .about-text {
   color: var(--primary-shades);
-  font-size: var(--small-font);
+  font-size: calc(var(--small-font) + 0.4rem);
   line-height: 1.8;
   margin-bottom: 6.4rem;
 }
@@ -309,7 +333,15 @@ ABOUT US SECTION
 
 .director-name,
 .director-role {
-  font-size: var(--extra-small-font);
+  font-size: var(--small-font);
+  color: var(--primary-shades);
+  word-wrap: wrap;
+  line-height: 1.2;
+}
+
+.director-role {
+  border-bottom: 1px solid #555;
+  margin-right: 0.6rem;
 }
 
 .available-cards .available-city:nth-child(odd) {
@@ -332,12 +364,14 @@ FOOTER SECTION
 **************/
 
 .footer {
-  padding: var(--section-space) 3.2rem 1rem;
+  padding: 6.4rem 3.2rem 1rem;
   border-top: 1px solid #aaa;
+  font-family: sans-serif;
 }
 
 .footer.grid {
   gap: 9.6rem;
+  justify-content: center;
 }
 
 .footer-logo {
@@ -347,7 +381,7 @@ FOOTER SECTION
 
 .copyright,
 .website-info {
-  font-size: var(--extreme-small-font);
+  font-size: var(--small-font);
 }
 
 .website-info {
@@ -356,7 +390,7 @@ FOOTER SECTION
 }
 
 .col-heading {
-  font-size: var(--small-font);
+  font-size: var(--medium-font);
   font-weight: 700;
   margin-bottom: 3.2rem;
 }
@@ -364,11 +398,11 @@ FOOTER SECTION
 .contact-ul {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 2.4rem;
 }
 
 .contact-ul li {
-  font-size: var(--extra-small-font);
+  font-size: var(--small-font);
 }
 
 .contact-ul a:link,
@@ -384,19 +418,19 @@ FOOTER SECTION
 .social-ul {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 2.4rem;
 }
 
 .social-ul li {
   display: flex;
   gap: 1.6rem;
   align-items: center;
-  font-size: var(--extra-small-font);
+  font-size: var(--small-font);
 }
 
 .icon {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 3.6rem;
+  height: 3.6rem;
 }
 
 .social-ul li a:link,
